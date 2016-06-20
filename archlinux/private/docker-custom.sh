@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Necessary Packages #
-pacman -Sy git npm nodejs base-devel nano ruby --noconfirm
+pacman -Sy man git npm nodejs base-devel nano ruby --noconfirm
 
 # Install Jekyll #
 gem install jekyll
