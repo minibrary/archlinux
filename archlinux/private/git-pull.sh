@@ -11,7 +11,7 @@ basedir=~/git
 repo01=kr.blog
 repo02=en.blog
 repo03=jp.blog
-repo04=docker
+#repo04=
 #repo05=
 #repo06=
 #repo07=
@@ -19,7 +19,7 @@ repo04=docker
 #repo09=
 #repo10=
 
-for repo in $repo01 $repo02 $repo03 $repo04;
+for repo in $repo01 $repo02 $repo03;
         do (
                 if [ ! -d $basedir/${repo} ]
                 then
