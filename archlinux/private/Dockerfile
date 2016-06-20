@@ -13,7 +13,10 @@ RUN chmod 755 \
   pacman -Syu --noconfirm && \
   ./docker-custom.sh && \
   cat ./git-pull.sh >> ~/.bashrc && \
-  rm *.sh
+  rm *.sh && \
+  git config --global user.name minibrary && \
+  git config --global user.email minibrary@gmail.com && \
+  export EDITOR=nano
 
 EXPOSE 3000
 
