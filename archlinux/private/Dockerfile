@@ -4,7 +4,7 @@
 FROM minibrary/archlinux
 MAINTAINER MiNi <minibrary@gmail.com>
 
-ADD *.sh .
+ADD *.sh ./
 
 RUN chmod 755 ./docker-custom.sh && \
   chmod 755 ./git-pull.sh
