@@ -15,7 +15,7 @@ npm install -g gulp
 # Make git local base directory #
 mkdir ~/git
 
-curl -O https://raw.githubusercontent.com/minibrary/docker/master/archlinux/private/git-pull.sh && chmod 755 git-pull.sh && ./git-pull.sh
+/git-pull.sh
 
 #Github Username
 user=minibrary
