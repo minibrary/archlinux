@@ -4,13 +4,13 @@
 FROM minibrary/archlinux
 MAINTAINER MiNi <minibrary@gmail.com>
 
-ADD *.sh /
+ADD *.sh
 
-RUN chmod 755 /docker-custom.sh && \
-  chmod 755 /git-pull.sh
+RUN chmod 755 docker-custom.sh && \
+  chmod 755 git-pull.sh
 
 RUN pacman -Syu
-RUN /docker-custom.sh
+RUN docker-custom.sh
 
 EXPOSE 3000
 
