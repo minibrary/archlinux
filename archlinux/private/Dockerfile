@@ -9,7 +9,7 @@ COPY git-pull.sh /git-pull.sh
 RUN chmod 755 /docker-custom.sh
 RUN chmod 755 /git-pull.sh
 
-RUN pacman -Syu
+RUN pacman -Syu --noconfirm
 RUN /docker-custom.sh
 
 EXPOSE 3000
