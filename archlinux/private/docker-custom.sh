@@ -15,7 +15,7 @@ npm install -g gulp
 # Make git local base directory #
 mkdir ~/git
 
-/git-pull.sh
+~/git-pull.sh
 
 #Github Username
 user=minibrary
