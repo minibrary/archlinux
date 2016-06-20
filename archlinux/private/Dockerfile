@@ -4,14 +4,16 @@
 FROM minibrary/archlinux
 MAINTAINER MiNi <minibrary@gmail.com>
 
-COPY docker-custom.sh /docker-custom.sh
-COPY git-pull.sh /git-pull.sh
-RUN chmod 755 /docker-custom.sh
-RUN chmod 755 /git-pull.sh
+WORKDIR /root/
+COPY *.sh ./
 
-RUN pacman -Syu --noconfirm
-RUN /docker-custom.sh
-RUN cat /git-pull.sh >> ~/.bashrc
+RUN chmod 755 \
+  ./docker-custom.sh \
+  ./git-pull.sh && \
+  pacman -Syu --noconfirm && \
+  ./docker-custom.sh && \
+  cat ./git-pull.sh >> ~/.bashrc && \
+  rm *.sh
 
 EXPOSE 3000
 
