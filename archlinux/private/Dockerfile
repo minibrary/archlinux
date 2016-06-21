@@ -4,7 +4,7 @@
 FROM minibrary/archlinux
 MAINTAINER MiNi <minibrary@gmail.com>
 
-# Locale to English.UTF-8
+# Locale to English.UTF-8 #
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
